@@ -56,7 +56,8 @@
 
 
 .box img {
-    width: 203px;
-    height: 199px;
+    width: 233px;
+    height: 219px;
     border-radius: 12px;
+    margin-top: -11px;
 }
