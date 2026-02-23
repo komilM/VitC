@@ -9,7 +9,7 @@ const Info = () => {
     const [son, setSon] = useState(0);
 
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/${id}`)
+        fetch(`https://69980fcad66520f95f166f62.mockapi.io/foods/${id}`)
             .then(res => res.json())
             .then(data => setMahsulot(data));
     })
@@ -37,6 +37,7 @@ const Info = () => {
             <div className="main">
                 <img src={mahsulot.image} alt="" />
                 <div className="texts">
+                    <h1 style={{ fontSize: "40px", fontWeight: "600" }}>{mahsulot.name}</h1>
                     <h1 style={{ fontSize: "40px", fontWeight: "600" }}>{mahsulot.title}</h1>
                     <h1 style={{ fontSize: "32px", fontWeight: "600", color: "#39B856", marginTop: "24px" }}>{mahsulot.price}</h1>
                     <hr style={{ marginTop: "24px" }} />
